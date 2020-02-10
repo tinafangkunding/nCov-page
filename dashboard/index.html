@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/v-charts/lib/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-charts/lib/style.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/app.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>Serverless Fullstack</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="hero">
+          <img src="./src/images/hero.png" />
+        </div>
+
+        <div class="tagline">
+          a fullstack app built on serverless components via the serverless framework
+        </div>
+
+        <br>
+        <div class="chart-source-data-box">
+          <button v-on:click="queryServer">Get Server Time</button><br>
+          <div style="color: aliceblue;">{{ message }}</div>
+        </div>
+
+        <br>
+        <div class="sls-div tagline">
+          点击查询深圳市疫情趋势图
+        </div>
+        <div class="chart-source-data-box">
+          <button @click="getPatient">Get Patients</button><br>
+        </div>
+        <div class="chart-wrapper">
+          <div class="chart-no-data" v-if="chartData.rows.length === 0">No Data</div>
+          <ve-line class="chart" :data="chartData" :extend="extend" :settings="chartSettings" height="100%" v-if="chartData.rows.length > 0"/>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

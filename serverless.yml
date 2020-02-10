@@ -1,0 +1,22 @@
+name: tencent-fullstack-vue-application
+
+dashboard:
+  component: '@serverless/tencent-website'
+  inputs:
+    code:
+      src: dist
+      root: dashboard
+      hook: npm run build
+    env:
+      apiUrl: ${api.url}
+      apiUrlSZ: https://myapi.ihogu.com/public/?s=Whfy.city&city=%E6%B7%B1%E5%9C%B3
+      # domain: www.serverlessmetrics.com # Insert your custom domain here
+
+api:
+  component: '@serverless/tencent-express'
+  inputs:
+    code: ./api
+    functionName: tencent-fullstack-vue-api
+    apigatewayConf:
+      protocols:
+        - https
