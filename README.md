@@ -22,7 +22,7 @@ $ npm i -g serverless
 
 ```console
 $ mkdir nCov
-$ serverless create --template-url https://github.com/tinafangkunding/nCov-page.git
+$ serverless create --template-url https://github.com/tinafangkunding/nCov-page
 ```
 
 使用`cd`命令，进入`\nCov` 文件夹，可以查看到如下目录结构：
