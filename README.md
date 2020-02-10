@@ -21,11 +21,10 @@ $ npm i -g serverless
 之后可以新建一个空的文件夹，使用 `create --template-url`，安装相关 template。
 
 ```console
-$ mkdir nCov
 $ serverless create --template-url https://github.com/tinafangkunding/nCov-page
 ```
 
-使用`cd`命令，进入`\nCov` 文件夹，可以查看到如下目录结构：
+使用`cd`命令，进入`\nCov-page` 文件夹，可以查看到如下目录结构：
 
 ```
 |- api
