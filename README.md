@@ -46,7 +46,7 @@ $ npm i
 
 ### 2. 部署
 
-回到`tencent-fullstack-vue-application`目录下，直接通过 `serverless` 命令来部署应用:
+回到`nCov-page`目录下，直接通过 `serverless` 命令来部署应用:
 
 ```console
 $ serverless
