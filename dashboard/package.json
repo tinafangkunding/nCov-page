@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "echarts": "^4.6.0",
+    "v-charts": "^1.19.0"
   },
   "scripts": {
     "start": "parcel index.html",
