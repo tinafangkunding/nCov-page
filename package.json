@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@serverless/tencent-express": "^2.0.0",
-    "@serverless/tencent-website": "^1.2.0",
-    "echarts": "^4.6.0",
-    "v-charts": "^1.19.0"
+    "@serverless/tencent-website": "^1.2.0"
   },
   "devDependencies": {
     "@serverless/eslint-config": "^1.2.1",
