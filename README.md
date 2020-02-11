@@ -84,7 +84,7 @@ $ cd dashboard && npm run start
 ```
 
 2. 腾讯云 Component 已支持二维码一键登录，如您希望使用配置秘钥的方式登录，也可以参考如下步骤：
-   在`tencent-fullstack-vue-application` 文件夹根目录创建 `.env` 文件
+   在`nCov-page` 文件夹根目录创建 `.env` 文件
 
 ```console
 $ touch .env # 腾讯云的配置信息
