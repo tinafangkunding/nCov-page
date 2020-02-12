@@ -1,6 +1,6 @@
 # nCov-page
 
-Use Serverless Components to deploy a nCov page with 3 steps. Check how many people get sick in your city. The project based on [Serverless full-stack template Vue.js + Express.js）](https://github.com/serverless/components/tree/master/templates/tencent-fullstack-vue-application)
+Use Serverless Components to deploy a nCov page with 3 steps. Check how many people get sick in your city. The project based on [Serverless full-stack template Vue.js + Express.js](https://github.com/serverless/components/tree/master/templates/tencent-fullstack-vue-application)
 
 &nbsp;
 
@@ -33,7 +33,7 @@ Use `cd` command and get into `\nCov-page` folder, and the directory should look
 ```
 |- api
 |- dashboard
-|- serverless.yml      # 使用项目中的 yml 文件
+|- serverless.yml      
 ```
 
 Run bootstrap script to install the NPM dependencies:
@@ -50,13 +50,7 @@ $ serverless
 Use the --debug flag if you'd like to learn what's happening behind the scenes:
 ```
 $ serverless --debug
-```
 
-如您的账号未[登陆](https://cloud.tencent.com/login)或[注册](https://cloud.tencent.com/register)腾讯云，您可以直接通过微信扫描命令行中的二维码进行授权登陆和注册。
-
-部署成功后，可以直接在浏览器中访问日志中返回的 dashboard url 地址，查看该全栈 Web app 的效果:
-
-```
   dashboard: 
     url: http://9u9ywac-n56qlg-1251971143.cos-website.ap-guangzhou.myqcloud.com
     env: 
@@ -73,7 +67,7 @@ $ serverless --debug
 
 &nbsp;
 
-### 5. Account (optional)
+### 4. Account (optional)
 
 If you cannot Login/Signup with Wechat QR code, just create a `.env` file
 
