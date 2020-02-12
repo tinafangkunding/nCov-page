@@ -32,16 +32,9 @@ $ serverless create --template-url https://github.com/tinafangkunding/nCov-page
 |- serverless.yml      # 使用项目中的 yml 文件
 ```
 
-分别在`dashboard` 和 `api` 两个文件目录执行 NPM 依赖的安装，如下命令所示：
-
-```console
-$ cd dashboard
-$ npm i
+在`\nCov-page`目录下，运行如下命令分别安装目录下的 NPM 依赖：
 ```
-
-```
-$ cd api
-$ npm i
+$ npm run bootstrap
 ```
 
 ### 2. 部署
